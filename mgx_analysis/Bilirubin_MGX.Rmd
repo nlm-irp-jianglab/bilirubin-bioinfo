@@ -33,16 +33,15 @@ mapping data (reads mapped per gene, total reads in sample).
 The processing consists of the following steps: 
 1) calculating the CPM values for both genes for each sample. 
 2) removing any samples with less than or equal to one million reads. 
-3) classifying each sample as having bilirubin reductase and gus as present or absent based on a 5 CPM threshold. 
+3) classifying each sample as having bilirubin reductase as present or absent based on a 5 CPM threshold. 
 
 ```{r}
 # Read in overall data file
 project_data <- read.csv('./bilirubin_mgx_data.csv', row.names = 1)
 
-# Calculate CPM values for bilR and GUS genes. Remove samples with less than 1 
+# Calculate CPM values for the bilR gene. Remove samples with less than 1 
 # million reads
 project_data$bilr_tot <- (project_data$bilR/project_data$total_reads)*1000000
-project_data$gus_tot <- (project_data$gus/project_data$total_reads)*1000000
 project_data <- project_data[project_data$total_reads > 1000000,]
 
 
@@ -50,8 +49,6 @@ project_data <- project_data[project_data$total_reads > 1000000,]
 cpm_threshold = 5
 project_data$bilr_presence[project_data$bilr_tot <= cpm_threshold] <- 'absent'
 project_data$bilr_presence[project_data$bilr_tot > cpm_threshold] <- 'present'
-project_data$gus_presence[project_data$gus_tot <= cpm_threshold] <- 'absent'
-project_data$gus_presence[project_data$gus_tot > cpm_threshold] <- 'present'
 
 ```
 ## Visual inspection of data
