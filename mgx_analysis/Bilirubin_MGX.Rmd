@@ -236,7 +236,7 @@ healthy_ibd <- ggplot(bilr_disease, aes(x=host_disease, y=absent_frac*100), ) +
   theme_bw() +
   ylab('Percent of samples without bilR') + pub_theme() + xlab(element_blank()) +
   theme(axis.text.x=element_text(angle = -45, hjust = 0), legend.position='none;') + scale_fill_tableau(palette = "Tableau 10", type = "regular",direction = 1) +
-  geom_bracket(xmin=c('CD', 'UC'), xmax=c('Healthy', 'Healthy'), label=c('2.2e-16', '2.2e-16'), y.position = c(38, 36), size=0.2, label.size=2.5, vjust=0) + 
+  geom_bracket(xmin=c('CD', 'UC'), xmax=c('Healthy', 'Healthy'), label=c('<1e-07', '<1e-07'), y.position = c(38, 36), size=0.2, label.size=2.5, vjust=0) + 
   annotate(geom='text', x=c('CD', 'UC', 'Healthy'), y=c(33, 34, 1),label=c('n=1224', 'n=639', 'n=1801') , size=2.5)
 
 disease_frac <- bilr_disease[c('absent_frac')]
@@ -270,7 +270,7 @@ health_infant <- ggplot(healthy_infant, aes(x=group, y=absent_frac*100), ) +
   theme_bw() +
   ylab('Percent of samples without bilR') + pub_theme() + xlab(element_blank()) +
   theme(axis.text.x=element_text(angle = -45, hjust = 0), legend.position='none', plot.margin= margin(0,0,0,0,'cm')) + scale_fill_tableau(palette = "Tableau 10", type = "regular",direction = 1) +
-  geom_bracket(xmin=c('Infant (< 1 month)'), xmax=c('Adult'), label=c('2.2e-16'), y.position = c(77), size=0.2, label.size=2.5, vjust=0) + 
+  geom_bracket(xmin=c('Infant (< 1 month)'), xmax=c('Adult'), label=c('<1e-07'), y.position = c(77), size=0.2, label.size=2.5, vjust=0) + 
   annotate(geom='text', x=c('Infant (< 1 month)', 'Adult'), y=c(71.5, 2),label=c('n=1341','n=1801') , size=2.5)
 health_infant
 ```

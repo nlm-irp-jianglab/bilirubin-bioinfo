@@ -40,7 +40,7 @@
 <g clip-path='url(#cpMjcuNzd8OTIuMDF8NS40OHwyMjcuMjg=)'>
 <rect x='61.35' y='51.62' width='26.28' height='165.57' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #4E79A7;' />
 <rect x='32.15' y='216.79' width='26.28' height='0.40' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #4E79A7;' />
-<text x='59.89' y='32.32' text-anchor='middle' style='font-size: 7.11px; font-family: "Arial";' textLength='24.11px' lengthAdjust='spacingAndGlyphs'>2.2e-16</text>
+<text x='59.89' y='32.32' text-anchor='middle' style='font-size: 7.11px; font-family: "Arial";' textLength='22.33px' lengthAdjust='spacingAndGlyphs'>&lt;1e-07</text>
 <line x1='74.49' y1='40.01' x2='74.49' y2='34.54' style='stroke-width: 0.43;' />
 <line x1='74.49' y1='34.54' x2='45.29' y2='34.54' style='stroke-width: 0.43;' />
 <line x1='45.29' y1='34.54' x2='45.29' y2='40.01' style='stroke-width: 0.43;' />
@@ -186,11 +186,11 @@
 <rect x='406.69' y='56.58' width='27.10' height='160.62' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #4E79A7;' />
 <rect x='466.91' y='216.34' width='27.10' height='0.85' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #4E79A7;' />
 <rect x='436.80' y='49.96' width='27.10' height='167.24' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #4E79A7;' />
-<text x='450.35' y='23.42' text-anchor='middle' style='font-size: 7.11px; font-family: "Arial";' textLength='24.11px' lengthAdjust='spacingAndGlyphs'>2.2e-16</text>
+<text x='450.35' y='23.42' text-anchor='middle' style='font-size: 7.11px; font-family: "Arial";' textLength='22.33px' lengthAdjust='spacingAndGlyphs'>&lt;1e-07</text>
 <line x1='420.24' y1='31.36' x2='420.24' y2='25.64' style='stroke-width: 0.43;' />
 <line x1='420.24' y1='25.64' x2='480.45' y2='25.64' style='stroke-width: 0.43;' />
 <line x1='480.45' y1='25.64' x2='480.45' y2='31.36' style='stroke-width: 0.43;' />
-<text x='465.40' y='33.51' text-anchor='middle' style='font-size: 7.11px; font-family: "Arial";' textLength='24.11px' lengthAdjust='spacingAndGlyphs'>2.2e-16</text>
+<text x='465.40' y='33.51' text-anchor='middle' style='font-size: 7.11px; font-family: "Arial";' textLength='22.33px' lengthAdjust='spacingAndGlyphs'>&lt;1e-07</text>
 <line x1='450.35' y1='41.45' x2='450.35' y2='35.72' style='stroke-width: 0.43;' />
 <line x1='450.35' y1='35.72' x2='480.45' y2='35.72' style='stroke-width: 0.43;' />
 <line x1='480.45' y1='35.72' x2='480.45' y2='41.45' style='stroke-width: 0.43;' />
