@@ -14,10 +14,15 @@ process_mgx.sh usage:
 
   example: process_mgx.sh ERR1449717 ./bilR/bilR ./human_index/human 8 ./outdir /tmp/
 
-## Metagenomic anaylsis script
+## Metagenomic anaylsis scripts
 The mgx_analysis directory contains the processed metagenomic data and metadata
 and a R markdown notebook that contains the processing and analysis detailed in
 the manuscript.
 - mgx_analysis/bilirubin_mgx_data.csv : metagenomic data table for all samples included in study
 - mgx_analysis/Bilirubin_MGX.Rmd : R markdown analysis notebook
-- mgx_analysis/Bilirubin_MGX.pdf : rendered R markdown notebook with pregenerated figures
+- mgx_analysis/Bilirubin_MGX.html : rendered R markdown notebook with pregenerated figures
+
+## Metabolomics and Fluorescence Analysis
+The metab_analysis folder contains the data and scripts used to analyze the
+fluorescence and metabolomics data associated with the manuscript. Scripts
+and data are organized in folder by the figure(s) they are associated with. 

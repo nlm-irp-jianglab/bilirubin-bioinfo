@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 # Detection of Bilirubin Reductase in the Human Gut
 ```{r include=FALSE}
@@ -69,8 +69,8 @@ bilr_hist_stack <- ggplot(project_data, aes(x=total_reads, fill=bilr_presence)) 
 bilr_hist | bilr_hist_stack
 ```
 
-In addition to checking if there were any trends bewteen presence of bilR and 
-total reads, we wanted to see if any studies in particulare were extreme outliers
+In addition to checking if there were any trends between presence of bilR and 
+total reads, we wanted to see if any studies in particular were extreme outliers
 in terms of bilirubin presence or absence. Based on our preliminary analysis
 multiple studies related to probiotic testing were extreme outliers having bilR
 absent in almost all samples. These studies did not end up being included in the
@@ -186,7 +186,7 @@ bilR_infants_3m <- ggplot(means_bilr, aes(x=age, y=(1-frac)*100, size=`Number of
   theme(axis.text.x=element_text(angle = -45, hjust = 0), legend.position = c(0.80,0.75), legend.background = element_rect(colour = NA),
         plot.margin= margin(0,0,0,0,'cm')) + scale_x_discrete(limits=c('0-4','5-9','10-14','15-19','20-24','25-29','30-34','35-39','40-44','45-49','50-54','55-59','60-64','65-69','70-74','75-79','80-84','85-89')) +
   ylim(0,100) + scale_color_tableau(palette = "Tableau 10", type = "regular",direction = 1) + scale_size(breaks=c(10,100,500))
-ggsave('S4Figure.png', bg='transparent', width=7, height=4)
+ggsave('Extended_data_Fig10.png', bg='transparent', width=7, height=4)
 bilR_infants_3m
 ```
 
@@ -276,12 +276,12 @@ health_infant
 ```
 
 When put together these data paint a picture of bilirubin reductase being 
-present in nearly all healthy adults, but often being absent in ealry life
-infants, as the gut micorbiome is first developing, and during inflammatory 
+present in nearly all healthy adults, but often being absent in early life
+infants, as the gut microbiome is first developing, and during inflammatory 
 gut disorders, which are known to cause significant microbial dysbiosis in the
 gut. 
 ```{r}
-health_infant + bilR_infants + healthy_ibd + plot_layout(widths=c(1,4,1.5))
-ggsave('Figure6.svg', bg='transparent', width=7, height=4)
+bilR_infants + health_infant +healthy_ibd + plot_layout(widths=c(4,1,1.5))
+ggsave('Figure6.png', bg='transparent', width=7, height=4)
 ```
 
