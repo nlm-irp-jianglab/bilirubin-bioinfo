@@ -1,7 +1,7 @@
 # bilirubin-bioinfo repository
 
 This repository contains the scripts related to the metagenomic analyses
-presented in {Publication title}.
+presented in "BilR is a gut microbial enzyme that reduces bilirubin to urobilinogen".
 
 ## Metagenomic processing pipeline
 The mgx_pipeline directory contains a bash script for processing metagenomic
